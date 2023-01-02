@@ -10,6 +10,7 @@ import { config } from './src/config/config.js';                // Archivo de co
 import * as middlewares from './src/middlewares/index.js';      //
 import cookieParser  from 'cookie-parser';
 import passport from 'passport';
+import logger from './src/utils/logger.js';
 /* ================================== INSTANCES ================================== */
 const app = express();                                          // Instanciando Express (Creando aplicación)
 const exphbs = create({                                         // Instanciando Handlebars con configuración
@@ -25,9 +26,11 @@ app.use(express.json());                                        // Method in-bui
 app.use(express.urlencoded({ extended: true}));                 // Method in-built, reconoce el request object como strings o arreglos.
 app.use(express.static('public'));                              // Asigna carpeta pública estática
 app.use(cookieParser());                                        // Parsea el contenido de cookies
-// app.use(passport.initialize());
-// app.use(passport.session());
-
+// if(config.NODE_ENV === 'development'){
+    // app.use(log());
+// } else if(config.NODE_ENV === 'production'){
+//     app.use(compress());
+// }
 /*     ---------------------------- Session Setup ----------------------------     */
 app.use(session({                                               // Parámetros de la sesion
     store: MongoStore,                                              // Conexión a MongoDB
@@ -36,6 +39,9 @@ app.use(session({                                               // Parámetros d
     saveUninitialized: false,                                       // Forza guardar sesion no inicializada
     rolling: true,                                                  // Forza a cookie de identificador de sesion reiniciar con cada interacción
 }));
+/*     ------------------------------ Passport  ------------------------------     */
+app.use(passport.initialize());                                 // Arranca módulo Passport
+app.use(passport.session());                                    // Usa Sessions de Express para que Passport dé seguimiento a sesión de usuario
 /*     --------------------------- Motor Templates ---------------------------     */
 app.engine('hbs', exphbs.engine);                               // 
 app.set('views', path.join(process.cwd(), 'src/views'));        // 

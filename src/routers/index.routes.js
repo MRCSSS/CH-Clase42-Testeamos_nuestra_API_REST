@@ -9,14 +9,14 @@ import hChkRouter from '../apiV1/healtCk/routes.js';
 const router = Router();
 /* =================================== ROUTES  =================================== */
 //     - Carts
-router.use ('/cart', cartRouter);
+router.use ('/cart',        cartRouter);
 //     - Users
-router.use ('/user', userRouter);
+router.use ('/user',        userRouter);
 //     - Products
-router.use ('/products',prodRouter);
+router.use ('/products',    prodRouter);
 //     - Documentation
-router.use ('/doc',docuRouter);
+router.use ('/doc',         docuRouter);
 //     - Healt Check
-router.use ('/healtCheck',hChkRouter);
+router.use ('/healtCheck',  hChkRouter);
 /* ============================== EXPORTED MODULES  ============================== */
 export default router;

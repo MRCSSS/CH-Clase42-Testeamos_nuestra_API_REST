@@ -1,14 +1,17 @@
 /* ============================ MODULOS ============================= */
 import ContMongoDB from '../containers/ContMongoDB.js';
-import ProductsModel from "../products.model.js";
+import CartModel from "./models/carts.model.js";
 
 /* =========================== DAO CLASS ============================ */
-class ProductsDaoMongoDB extends ContMongoDB {
+class CartsDaoMongoDB extends ContMongoDB {
     constructor() {
-        super(ProductsModel);
+        super(CartModel);
     }
 
+    // async save( cart= { products: [] }) {
+    //     return super.save(cart);
+    // }
 }
 
 /* ====================== MODULOS EXPORTADOS ======================== */
-export default ProductsDaoMongoDB;
+export default CartsDaoMongoDB;

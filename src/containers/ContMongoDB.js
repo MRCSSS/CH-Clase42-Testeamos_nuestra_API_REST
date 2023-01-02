@@ -4,19 +4,12 @@ import { config } from '../../config/config.js';
 // import { logger } from '../../utils/logger.js';
 import MongoDBClient from '../../classes/DbClientMongo.class.js';
 
-// mongoose.set('strictQuery', true);
-// await mongoose.connect(config.mongoDB.url);
 /* ======================== CONTAINER CLASS ========================+ */
 class ContMongoDB {
     constructor(model) {
         this.collection = model;
         this.container = new MongoDBClient();
     }
-
-
-    // constructor(collectionName, squema) {
-    //     this.collection = mongoose.model(collectionName, squema);
-    // }
 
     async getAll() {
         try {
