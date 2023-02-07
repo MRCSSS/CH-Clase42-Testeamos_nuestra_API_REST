@@ -7,8 +7,8 @@ testing_api_rest/node_modules
 testing_api_rest/00-*
 testing_api_rest/src/apiV1/doc
 testing_api_rest/src/apiV1/healtCk
-testing_api_rest/src/apiV1/products
-testing_api_rest/src/apiV1/users
+# testing_api_rest/src/apiV1/products
+# testing_api_rest/src/apiV1/users
 
 # testing
 # /coverage
