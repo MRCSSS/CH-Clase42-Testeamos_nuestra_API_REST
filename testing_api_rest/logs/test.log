@@ -1,0 +1,28 @@
+[2023-02-07T19:14:41.023Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:14:41.216Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:14:41.216Z][test:info] message: 'Quantity of users: 0'
+[2023-02-07T19:14:41.217Z][test:info] status: 200, route: 'GET /apiV1/user/', {"method":"getAllUsers","users":0}
+[2023-02-07T19:17:52.604Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:17:52.788Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:17:52.789Z][test:info] message: 'Quantity of users: 0'
+[2023-02-07T19:17:52.790Z][test:info] status: 200, route: 'GET /apiV1/user/', {"method":"getAllUsers","users":0}
+[2023-02-07T19:18:13.673Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:18:13.851Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:18:13.851Z][test:info] message: 'Quantity of users: 0'
+[2023-02-07T19:18:13.852Z][test:info] status: 200, route: 'GET /apiV1/user/', {"method":"getAllUsers","users":0}
+[2023-02-07T19:21:36.398Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:21:36.572Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:21:37.504Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:21:37.684Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:21:37.684Z][test:info] message: 'User with ID '63e2a4c16ff9c3fd14c30c00' registered!!!'
+[2023-02-07T19:21:37.685Z][test:info] status: 201, route: 'POST /apiV1/user/register', {"method":"register","message":"User registered successfully!!!","userID":"63e2a4c16ff9c3fd14c30c00"}
+[2023-02-07T19:21:38.771Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:21:38.929Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:21:38.929Z][test:info] message: 'Quantity of users: 1'
+[2023-02-07T19:21:38.929Z][test:info] status: 200, route: 'GET /apiV1/user/', {"method":"getAllUsers","users":1}
+[2023-02-07T19:27:37.016Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:27:37.196Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:27:38.150Z][test:info] Mongo DB Client connected!!
+[2023-02-07T19:27:38.330Z][test:info] Mongo DB Client disconnected!!
+[2023-02-07T19:27:38.330Z][test:info] message: 'User with ID '63e2a62af547300b6ac25724' registered!!!'
+[2023-02-07T19:27:38.331Z][test:info] status: 201, route: 'POST /apiV1/user/register', {"method":"register","message":"User registered successfully!!!","userID":"63e2a62af547300b6ac25724"}

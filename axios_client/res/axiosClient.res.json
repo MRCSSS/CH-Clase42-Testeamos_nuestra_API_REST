@@ -1,0 +1,101 @@
+[
+	{
+		"step": 1,
+		"description": "User registration",
+		"data": {
+			"newUser": {
+				"name": "Gaby",
+				"username": "mailtest2@sitio.com",
+				"address": "Cuauhtémoc, CDMX, México",
+				"age": 31,
+				"password": "12345678",
+				"phone": "5511223344"
+			}
+		}
+	},
+	{
+		"step": 2,
+		"description": "Get all users",
+		"data": {
+			"method": "getAllUsers",
+			"users": [
+				{
+					"id": "63e29fb1a859ed97a5f84a99",
+					"name": "Gaby",
+					"username": "mailtest2@sitio.com",
+					"address": "Cuauhtémoc, CDMX, México",
+					"age": 31,
+					"phone": "5511223344",
+					"userImg": "1675796399218_user_test.jpg",
+					"timestamp": "Tue Feb 07 2023 13:00:01 GMT-0600 (Central Standard Time)"
+				}
+			]
+		}
+	},
+	{
+		"step": 3,
+		"description": "Get new user by ID",
+		"data": {
+			"userID": "63e29fb1a859ed97a5f84a99",
+			"user": {
+				"method": "getUser",
+				"message": "User found!!!",
+				"data": {
+					"id": "63e29fb1a859ed97a5f84a99",
+					"name": "Gaby",
+					"username": "mailtest2@sitio.com",
+					"address": "Cuauhtémoc, CDMX, México",
+					"age": 31,
+					"phone": "5511223344",
+					"userImg": "1675796399218_user_test.jpg",
+					"timestamp": "Tue Feb 07 2023 13:00:01 GMT-0600 (Central Standard Time)"
+				}
+			}
+		}
+	},
+	{
+		"step": 4,
+		"description": "Update user",
+		"data": {
+			"updateData": {
+				"age": 28,
+				"address": "Alvaro Obregón, CDMX, México"
+			},
+			"userUpdated": {
+				"method": "getUser",
+				"message": "User found!!!",
+				"data": {
+					"id": "63e29fb1a859ed97a5f84a99",
+					"name": "Gaby",
+					"username": "mailtest2@sitio.com",
+					"address": "Alvaro Obregón, CDMX, México",
+					"age": 28,
+					"phone": "5511223344",
+					"userImg": "1675796399218_user_test.jpg",
+					"timestamp": "Tue Feb 07 2023 13:00:01 GMT-0600 (Central Standard Time)"
+				}
+			}
+		}
+	},
+	{
+		"step": 5,
+		"description": "Delete user",
+		"data": {
+			"userID": "63e29fb1a859ed97a5f84a99",
+			"allUsersList": {
+				"method": "getAllUsers",
+				"users": []
+			}
+		}
+	},
+	{
+		"step": 6,
+		"description": "Delete all users",
+		"data": {
+			"allUsersList": {
+				"method": "getAllUsers",
+				"users": []
+			}
+		}
+	}
+]
